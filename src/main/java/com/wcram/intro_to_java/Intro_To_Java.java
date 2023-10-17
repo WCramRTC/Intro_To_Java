@@ -4,6 +4,8 @@
 
 package com.wcram.intro_to_java;
 
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -25,7 +27,29 @@ public class Intro_To_Java {
     
     
     public static void main(String[] args) {
-        // string userInput = Console.ReadLine()
+         
+        Student will = new Student("Will", "Cram", 43);
+        System.out.println(will);
+        
+        
+    }
+    
+    public static void arrayList() {
+        // Lists are ArrayLists
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("Ednalynn");
+        names.add("Meili");
+       
+        for(int i = 0; i < names.size(); i++) {
+            // To access a value in a list
+            // use the method .get(index)
+            
+            System.out.println(names.get(i));
+        }
+    }
+    
+    public static void example() {
+                // string userInput = Console.ReadLine()
         System.out.println("Please enter your favorite red color in number :");   
         // KNOW THIS LINE FOR GETTING YOUR INPUT
         Scanner scanner = new Scanner(System.in);
@@ -42,16 +66,11 @@ public class Intro_To_Java {
         
         
         System.out.println("Hello, " + usersColor); // output
-        // System.out.println() is the same as Console.WriteLine()
-    
-        
+        // System.out.println() is the same as Console.WriteLine()     
 
-        
-        // try / catch
-        
-
-        
-
+        // Difference with Java
+        // method names start LOWER CASE
+        add(1, 2);
     
     // Ctrl + / is the comment AND uncomment hotkey
     // Variable scope
@@ -69,7 +88,7 @@ public class Intro_To_Java {
 //Then you can use scanner like ReadLine
     }
     
-    public static void Variables() {
+    public static void variables() {
                 
         // String, int, double, bool
         // String ( collection of characters ), char ( single character )
@@ -79,7 +98,7 @@ public class Intro_To_Java {
         
     }
     
-        public static void Loops() {
+    public static void loops() {
                // Loops
         // While
 //            while(false) {
@@ -115,7 +134,7 @@ public class Intro_To_Java {
    
     }
     
-            public static void Conditions() {
+    public static void conditions() {
                 // Conditions
         // Decision code blocks
         // if ( true / false ) { runable code }
@@ -126,7 +145,7 @@ public class Intro_To_Java {
  
     }
     
-    public static void Operations() {
+    public static void operations() {
                  
             // Operators
             // Math Operators ( Return a number ) : +, -, *, /, %, ++, --
@@ -146,7 +165,7 @@ public class Intro_To_Java {
     
     
     // TO create a method do public static return Type Name(parameters) { code }
-    public static double Add(double num1, double num2) {
+    public static double add(double num1, double num2) {
         return num1 + num2;
     }
     
